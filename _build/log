@@ -1,0 +1,6 @@
+# dune init proj pepe
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /Users/nefer/.cache/dune/db
+# Workspace root: /Users/nefer/Documents/Portfolio/Cyber/pepe
+# Auto-detected concurrency: 10
