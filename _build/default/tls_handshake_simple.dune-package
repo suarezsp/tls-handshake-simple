@@ -1,0 +1,7 @@
+(lang dune 3.16)
+(name tls_handshake_simple)
+(sections (lib .) (bin ../../bin) (doc ../../doc/tls_handshake_simple))
+(files
+ (lib (META dune-package opam))
+ (bin (tls_handshake_simple))
+ (doc (README.md)))

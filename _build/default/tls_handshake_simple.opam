@@ -1,0 +1,19 @@
+opam-version: "2.0"
+name: "tls_handshake_simple"  
+version: "0.1.0"
+synopsis: "Simulador de TLS"
+description: """
+Una app en OCaml que simula un handshake TLS básico.
+"""
+maintainer: "tucorreo@example.com"
+license: "MIT"
+depends: [
+  "dune" {>= "3.0"}
+  "opium"
+  "lwt"
+  "yojson"
+  "nocrypto"
+]
+build: [
+  ["dune" "build" "-p" name "-j" jobs]
+]

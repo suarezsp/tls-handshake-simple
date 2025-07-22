@@ -1,6 +1,22 @@
-# dune init proj pepe
+# dune build -p tls_handshake_simple
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Shared cache location: /Users/nefer/.cache/dune/db
-# Workspace root: /Users/nefer/Documents/Portfolio/Cyber/pepe
+# Workspace root: /Users/nefer/Documents/Portfolio/Cyber/tls-handshake-simple
 # Auto-detected concurrency: 10
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Release
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /Users/nefer/.opam/default/bin/ocamlc.opt -config > /var/folders/6n/g1gdz2tx6_q27z6m2w82yswr0000gn/T/dune_c0c23a_output
+$ (cd _build/default && /Users/nefer/.opam/default/bin/ocamldep.opt -modules -impl bin/src/main.ml) > _build/default/bin/src/.main.eobjs/dune__exe__Main.impl.d
+$ (cd _build/default && /Users/nefer/.opam/default/bin/ocamldep.opt -modules -impl bin/src/simulator.ml) > _build/default/bin/src/.main.eobjs/dune__exe__Simulator.impl.d
+$ (cd _build/default && /Users/nefer/.opam/default/bin/ocamldep.opt -modules -impl bin/src/types.ml) > _build/default/bin/src/.main.eobjs/dune__exe__Types.impl.d
+$ (cd _build/default && /Users/nefer/.opam/default/bin/ocamldep.opt -modules -intf bin/src/main.mli) > _build/default/bin/src/.main.eobjs/dune__exe__Main.intf.d
+$ (cd _build/default && /Users/nefer/.opam/default/bin/ocamlc.opt -w -40 -w -49 -nopervasives -nostdlib -g -bin-annot -bin-annot-occurrences -I bin/src/.main.eobjs/byte -no-alias-deps -o bin/src/.main.eobjs/byte/dune__exe.cmo -c -impl bin/src/.main.eobjs/dune__exe.ml-gen)
+$ (cd _build/default && /Users/nefer/.opam/default/bin/ocamlopt.opt -w -40 -w -49 -nopervasives -nostdlib -g -I bin/src/.main.eobjs/byte -I bin/src/.main.eobjs/native -intf-suffix .ml-gen -no-alias-deps -o bin/src/.main.eobjs/native/dune__exe.cmx -c -impl bin/src/.main.eobjs/dune__exe.ml-gen)

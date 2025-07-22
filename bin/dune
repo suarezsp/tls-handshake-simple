@@ -1,4 +1,0 @@
-(executable
- (public_name pepe)
- (name main)
- (libraries pepe))

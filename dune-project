@@ -1,26 +1,13 @@
-(lang dune 3.16)
-
-(name pepe)
-
-(generate_opam_files true)
-
-(source
- (github username/reponame))
-
-(authors "Author Name")
-
-(maintainers "Maintainer Name")
-
-(license LICENSE)
-
-(documentation https://url/to/documentation)
+(lang dune 3.9)
+(name tls_handshake_simple)
 
 (package
- (name pepe)
- (synopsis "A short synopsis")
- (description "A longer description")
- (depends ocaml dune)
- (tags
-  (topics "to describe" your project)))
-
-; See the complete stanza docs at https://dune.readthedocs.io/en/stable/reference/dune-project/index.html
+ (name tls_handshake_simple)
+ (synopsis "Simulador de handshake TLS")
+ (description "Simulador simplificado del protocolo TLS usando OCaml y Opium")
+ (depends
+  dune
+  lwt
+  opium
+  yojson
+  nocrypto))

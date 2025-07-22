@@ -1,0 +1,5 @@
+(executable
+ (name main)
+ (public_name tls_handshake_simple)
+ (libraries opium yojson lwt nocrypto)
+ (modules main simulator types))
